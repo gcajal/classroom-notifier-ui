@@ -13,6 +13,7 @@ plugins {
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+    maven { url = uri( "https://jitpack.io") }
 }
 
 dependencies {
@@ -23,7 +24,7 @@ dependencies {
 
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api(libs.commons.math3)
-
+    implementation("com.github.gcajal:ClassRoom-Notifier:main-SNAPSHOT")
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation(libs.guava)
 }

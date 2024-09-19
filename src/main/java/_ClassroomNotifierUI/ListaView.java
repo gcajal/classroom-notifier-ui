@@ -1,5 +1,7 @@
 package _ClassroomNotifierUI;
 
+import classroom.notifier.ClassroomNotifier;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -11,10 +13,14 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
 
-public class ListaView {
+import classroom.notifier.entity.Observable;
+import classroom.notifier.entity.Observer;
+
+public class ListaView implements Observer{
 
     private ListaController controller;
 	private JLabel changesLabel;
+	private ClassroomNotifier classroomNotifier;
 
 
 	public JLabel getChangesLabel() {
@@ -28,7 +34,9 @@ public class ListaView {
 	/**
 	 * Create the application.
 	 */
-	public ListaView() {
+	public ListaView(ClassroomNotifier classroomNotifier) {
+		this.classroomNotifier = classroomNotifier;
+		this.classroomNotifier.addObserver(this);
 		initialize();
 	}
 
@@ -72,5 +80,10 @@ public class ListaView {
 		testButton.addActionListener(e -> controller.handleTestButtonClick());
 
 		frame.setVisible(true);
+	}
+
+	@Override
+	public void update(Observable observable, Object o) {
+
 	}
 }
