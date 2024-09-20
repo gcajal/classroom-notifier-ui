@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="617665f9-76d1-444a-9a3a-1f46c4ea384b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.buildship.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.buildship.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/.settings/org.eclipse.buildship.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bin/main/_ClassroomNotifierUI/Library.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bin/main/_ClassroomNotifierUI/ListaView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bin/main/_ClassroomNotifierUI/ListaView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bin/test/_ClassroomNotifierUI/LibraryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_ClassroomNotifierUI/ApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ApplicationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_ClassroomNotifierUI/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_ClassroomNotifierUI/ListaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_ClassroomNotifierUI/ListaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/java/_ClassroomNotifierUI/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/LibraryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,10 +53,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.ApplicationInitializer.executor": "Run",
-    "Gradle.ClassroomNotifierUI [:_ClassroomNotifierUI.ApplicationInitializer.main()].executor": "Debug",
+    "Gradle.Build ClassroomNotifierUI.executor": "Run",
+    "Gradle.ClassroomNotifierUI [:_ClassroomNotifierUI.ApplicationInitializer.main()].executor": "Run",
     "Gradle.ClassroomNotifierUI:lib [:lib:_ClassroomNotifierUI.ApplicationInitializer.main()].executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "InicializacionCore",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
@@ -110,6 +100,17 @@
       <updated>1726751564586</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

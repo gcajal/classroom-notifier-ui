@@ -10,6 +10,12 @@ plugins {
     `java-library`
 }
 
+tasks.jar {
+    //archiveFileName.set("ClassRoom-Notifier-dfaffdd2fa.jar")
+    //destinationDirectory.set(file("C:/Users/gabri/eclipse-workspace/ClassroomNotifierUI/build/libs"))
+    //destinationDirectory.set(file("./build/libs"))
+}
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -24,7 +30,7 @@ dependencies {
 
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api(libs.commons.math3)
-    implementation("com.github.gcajal:ClassRoom-Notifier:main-SNAPSHOT")
+    implementation("com.github.gcajal:ClassRoom-Notifier:68aedb8ad1")
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation(libs.guava)
 }

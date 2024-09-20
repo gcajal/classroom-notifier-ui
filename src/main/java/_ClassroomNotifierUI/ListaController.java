@@ -2,7 +2,7 @@ package _ClassroomNotifierUI;
 
 import classroom.notifier.ClassroomNotifier;
 import classroom.notifier.entity.Observable;
-import classroom.notifier.entity.Observer;
+import classroom.notifier.entity.implement.Observer;
 
 import javax.swing.JLabel;
 import javax.swing.Timer;

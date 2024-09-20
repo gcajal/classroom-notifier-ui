@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
 
 import classroom.notifier.entity.Observable;
-import classroom.notifier.entity.Observer;
+import classroom.notifier.entity.implement.Observer;
 
 public class ListaView implements Observer{
 
