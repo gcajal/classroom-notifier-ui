@@ -6,13 +6,13 @@ import classroom.notifier.entity.Observer;
 
 import javax.swing.JLabel;
 import javax.swing.Timer;
+import java.util.Map;
 
 
 public class ListaController implements Observer {
 
-    private boolean changesDetectedVisible = false;
     private final JLabel changesLabel;
-    private ClassroomNotifier classroomNotifier;
+    private final ClassroomNotifier classroomNotifier;
 
     public ListaController(JLabel changesLabel, ClassroomNotifier classroomNotifier) {
         this.changesLabel = changesLabel;
@@ -23,8 +23,7 @@ public class ListaController implements Observer {
     public void handleTestButtonClick() {
         Timer timer = new Timer(2000, e -> {
             //changesDetectedVisible = !changesDetectedVisible;
-            changesDetectedVisible = this.classroomNotifier.EvaluarDiferencias();;
-            changesLabel.setVisible(changesDetectedVisible);
+            this.classroomNotifier.EvaluarDiferencias();
         });
 
         timer.setRepeats(false);
@@ -35,6 +34,7 @@ public class ListaController implements Observer {
 
     @Override
     public void update(Observable observable, Object o) {
-
+        Map<String, String> cambios = (Map<String, String>) o;
+        changesLabel.setVisible(true);
     }
 }
