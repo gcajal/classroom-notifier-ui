@@ -52,7 +52,7 @@ public class ListaView implements Observer{
 		frame.getContentPane().add(titlePanel);
 
 		changesLabelPanel = new ChangesLabelPanel();
-		changesLabelPanel.setBounds(220, 80, 200, 30);
+		changesLabelPanel.setBounds(220, 80, 250, 30);
 		frame.getContentPane().add(changesLabelPanel);
 
 		botonPanel = new BotonPanel();

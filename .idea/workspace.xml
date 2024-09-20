@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="617665f9-76d1-444a-9a3a-1f46c4ea384b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" afterDir="false" />
@@ -117,7 +116,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java</url>
-          <line>25</line>
+          <line>28</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -129,6 +128,39 @@
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gcajal/ClassRoom-Notifier/main-SNAPSHOT/390c6b6442c3ec060971d83468333c8199fcbf03/ClassRoom-Notifier-main-SNAPSHOT.jar!/classroom/notifier/Comparador.class</url>
           <line>32</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gcajal/ClassRoom-Notifier/68aedb8ad1/1e0388e1d00d1c9312928cb75f9bd71cfe97e2e/ClassRoom-Notifier-68aedb8ad1-sources.jar!/classroom/notifier/MateriasActuales.java</url>
+          <line>28</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gcajal/ClassRoom-Notifier/68aedb8ad1/1e0388e1d00d1c9312928cb75f9bd71cfe97e2e/ClassRoom-Notifier-68aedb8ad1-sources.jar!/classroom/notifier/MateriasActuales.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gcajal/ClassRoom-Notifier/68aedb8ad1/1e0388e1d00d1c9312928cb75f9bd71cfe97e2e/ClassRoom-Notifier-68aedb8ad1-sources.jar!/classroom/notifier/MateriasActuales.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gcajal/ClassRoom-Notifier/68aedb8ad1/1e0388e1d00d1c9312928cb75f9bd71cfe97e2e/ClassRoom-Notifier-68aedb8ad1-sources.jar!/classroom/notifier/MateriasActuales.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gcajal/ClassRoom-Notifier/68aedb8ad1/1e0388e1d00d1c9312928cb75f9bd71cfe97e2e/ClassRoom-Notifier-68aedb8ad1-sources.jar!/classroom/notifier/MateriasActuales.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

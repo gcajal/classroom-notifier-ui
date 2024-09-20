@@ -6,7 +6,9 @@ import classroom.notifier.entity.implement.Observer;
 
 import javax.swing.JLabel;
 import javax.swing.Timer;
-import java.util.Map;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class ListaController implements Observer {
@@ -18,6 +20,7 @@ public class ListaController implements Observer {
         this.changesLabel = changesLabel;
         this.classroomNotifier = classroomNotifier;
         this.classroomNotifier.addObserver(this);
+        this.classroomNotifier.getActualizadorMaterias().addObserver(this);
     }
 
     public void handleTestButtonClick() {
@@ -34,7 +37,17 @@ public class ListaController implements Observer {
 
     @Override
     public void update(Observable observable, Object o) {
-        Map<String, String> cambios = (Map<String, String>) o;
-        changesLabel.setVisible(true);
+        if(o instanceof String) {
+            changesLabel.setText((String) o);//System.out.println(o);
+            changesLabel.setVisible(true);
+        }
+        else if(o instanceof ArrayList<?>){
+            List<String> result = (List<String>) o;
+            changesLabel.setText("Se detectaron cambios de aula:\n" + result.getFirst());
+            changesLabel.setVisible(true);
+        }
+
+        //Map<String, String> cambios = (Map<String, String>) o;
+
     }
 }
