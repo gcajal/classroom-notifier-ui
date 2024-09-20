@@ -1,6 +1,7 @@
 package _ClassroomNotifierUI;
 
 import classroom.notifier.ClassroomNotifier;
+import classroom.notifier.MateriasActuales;
 import classroom.notifier.entity.Observable;
 import classroom.notifier.entity.implement.Observer;
 
@@ -37,14 +38,15 @@ public class ListaController implements Observer {
 
     @Override
     public void update(Observable observable, Object o) {
-        if(o instanceof String) {
-            changesLabel.setText((String) o);//System.out.println(o);
-            changesLabel.setVisible(true);
-        }
-        else if(o instanceof ArrayList<?>){
-            List<String> result = (List<String>) o;
-            changesLabel.setText("Se detectaron cambios de aula:\n" + result.getFirst());
-            changesLabel.setVisible(true);
+        if(observable instanceof MateriasActuales) {
+            if (o instanceof String) {
+                changesLabel.setText((String) o);//System.out.println(o);
+                changesLabel.setVisible(true);
+            } else if (o instanceof ArrayList<?>) {
+                List<String> result = (List<String>) o;
+                changesLabel.setText("Se detectaron cambios de aula:\n" + result.getFirst());
+                changesLabel.setVisible(true);
+            }
         }
 
         //Map<String, String> cambios = (Map<String, String>) o;

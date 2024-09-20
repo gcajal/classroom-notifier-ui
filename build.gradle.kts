@@ -10,7 +10,7 @@ plugins {
     `java-library`
 }
 
-
+val someConfiguration by configurations.creating
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -20,13 +20,14 @@ repositories {
 
 dependencies {
     // Use JUnit Jupiter for testing.
+
     testImplementation(libs.junit.jupiter)
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api(libs.commons.math3)
-    implementation("com.github.gcajal:ClassRoom-Notifier:e876ce830a")
+    implementation("com.github.gcajal:ClassRoom-Notifier:5c2599a24c")
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation(libs.guava)
 }
@@ -38,13 +39,25 @@ java {
     }
 }
 
-tasks.jar {
-    archiveFileName.set("ClassRoom-Notifier-68aedb8ad1.jar")
-    destinationDirectory.set(file("C:/Users/gabri/eclipse-workspace/ClassroomNotifierUI/build/libs"))
-    //destinationDirectory.set(file("./build/libs"))
-}
-
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+tasks.register("run") {
+    dependsOn(gradle.includedBuild("libs").task(":app:run"))
+}
+tasks.register<Copy>("copyDependencies") {
+    from(configurations.runtimeClasspath)
+    into("./build/libs")
+}
+
+tasks.named("build") {
+    dependsOn("copyDependencies")
+}
+/*
+tasks.buildDependents. (type: Copy) {
+    from configurations.runtime
+            into "lib"
+}
+*/
