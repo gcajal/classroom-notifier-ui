@@ -7,9 +7,9 @@
         <compositeConfiguration>
           <compositeBuild compositeDefinitionSource="SCRIPT">
             <builds>
-              <build path="$PROJECT_DIR$/build/libs" name="libs">
+              <build path="$PROJECT_DIR$/lib/build" name="build">
                 <projects>
-                  <project path="$PROJECT_DIR$/build/libs" />
+                  <project path="$PROJECT_DIR$/lib/build" />
                 </projects>
               </build>
             </builds>
@@ -19,7 +19,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/build/libs" />
+            <option value="$PROJECT_DIR$/lib/build" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -1,38 +1,30 @@
 package _ClassroomNotifierUI;
 
 import javax.swing.*;
-import javax.swing.border.LineBorder;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
+import java.awt.*;
 
 public class BotonPanel extends JPanel {
-    private JButton testButton;
+    private JButton button;
 
     public BotonPanel() {
 
-        JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 0, 6));
-        buttonPanel.setBounds(50, 50, 90, 70);
-        buttonPanel.setBorder(new LineBorder(Color.BLACK, 2));
-
-        buttonPanel.add(Box.createVerticalGlue());
-
         setLayout(new FlowLayout(FlowLayout.CENTER, 0, 6));
-        setPreferredSize(new Dimension(90, 70));
-        setBorder(BorderFactory.createLineBorder(Color.BLACK, 2));
 
-        testButton = new JButton("Test");
-        testButton.setBackground(Color.RED);
-        testButton.setForeground(Color.WHITE);
-        testButton.setFocusPainted(false);
-        testButton.setOpaque(true);
-        testButton.setBorderPainted(false);
-        testButton.setPreferredSize(new Dimension(80, 50));
+        button = new JButton("Guardar");
+        button.setForeground(Color.WHITE);
+        button.setBackground(new Color(34, 139, 34));
+        button.setFocusPainted(false);
+        button.setOpaque(true);
+        button.setBorderPainted(false);
+        button.setPreferredSize(new Dimension(130, 50));
 
-        add(testButton);
+        button.setHorizontalAlignment(SwingConstants.CENTER);
+        button.setVerticalAlignment(SwingConstants.CENTER);
+
+        add(button);
     }
 
-    public JButton getTestButton() {
-        return testButton;
+    public JButton getButton() {
+        return button;
     }
 }

@@ -18,17 +18,12 @@ import classroom.notifier.entity.implement.Observer;
 
 public class ListaView implements Observer{
 
-    private ListaController controller;
 	private ClassroomNotifier classroomNotifier;
-	private BotonPanel botonPanel;
 	private ChangesLabelPanel changesLabelPanel;
+	private NotificationPanel notificationPanel;
 	private TitlePanel titlePanel;
-
-	public void setController(ListaController controller) {
-		this.controller = controller;
-		botonPanel.getTestButton().addActionListener(e -> controller.handleTestButtonClick());
-	}
-
+	private InputPanel inputPanel;
+	private BotonPanel botonPanel;
 	/**
 	 * Create the application.
 	 */
@@ -43,20 +38,32 @@ public class ListaView implements Observer{
 	 */
 	private void initialize() {
         JFrame frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(0, 0, 600, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
+		frame.getContentPane().setBackground(new Color(245, 245, 245));
 
 		titlePanel = new TitlePanel();
-		titlePanel.setBounds(150, 10, 200, 30);
+		titlePanel.setBounds(50, 20, 500, 50);
+		titlePanel.setOpaque(false);
 		frame.getContentPane().add(titlePanel);
 
 		changesLabelPanel = new ChangesLabelPanel();
-		changesLabelPanel.setBounds(220, 80, 250, 30);
+		changesLabelPanel.setBounds(50, 80, 500, 300);
+		changesLabelPanel.setBackground(new Color(211, 211, 211));
 		frame.getContentPane().add(changesLabelPanel);
 
+		notificationPanel = new NotificationPanel();
+		notificationPanel.setBounds(50, 430, 250, 120);
+		notificationPanel.setBackground(new Color(211, 211, 211));
+		frame.getContentPane().add(notificationPanel);
+
+		inputPanel = new InputPanel();
+		inputPanel.setBounds(320, 430, 250, 60);
+		frame.getContentPane().add(inputPanel);
+
 		botonPanel = new BotonPanel();
-		botonPanel.setBounds(50, 50, 90, 70);
+		botonPanel.setBounds(385, 495, 130, 50);
 		frame.getContentPane().add(botonPanel);
 
 		frame.setVisible(true);
