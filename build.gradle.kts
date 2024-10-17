@@ -50,7 +50,7 @@ tasks.register("run") {
 
 tasks.register<Copy>("copyDependencies") {
     from(configurations.runtimeClasspath) {
-        include("**/*.jar")
+        include("**/Class*.jar")
     }
     into("./build/libs")
 }
