@@ -1,22 +1,19 @@
 package _ClassroomNotifierUI;
 
+import classroom.notifier.Adapter;
 import classroom.notifier.ClassroomNotifier;
 
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
-import javax.swing.Box;
-import javax.swing.JButton;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.border.LineBorder;
-
 import classroom.notifier.entity.Observable;
-import classroom.notifier.entity.implement.Observer;
 
-public class ListaView implements Observer{
+public class ListaView implements classroom.notifier.implement.Observer {
 
 	private ClassroomNotifier classroomNotifier;
 	private ChangesLabelPanel changesLabelPanel;
@@ -29,7 +26,7 @@ public class ListaView implements Observer{
 	 */
 	public ListaView(ClassroomNotifier classroomNotifier) {
 		this.classroomNotifier = classroomNotifier;
-		this.classroomNotifier.addObserver(this);
+		//this.classroomNotifier.addObserver(this);
 		initialize();
 	}
 
@@ -53,8 +50,8 @@ public class ListaView implements Observer{
 		changesLabelPanel.setBackground(new Color(211, 211, 211));
 		frame.getContentPane().add(changesLabelPanel);
 
-		notificationPanel = new NotificationPanel();
-		notificationPanel.setBounds(50, 430, 250, 120);
+		notificationPanel = new NotificationPanel(this.classroomNotifier.getNotificador().getNotificadores());
+		notificationPanel.setBounds(50, 430, 250, 80);
 		notificationPanel.setBackground(new Color(211, 211, 211));
 		frame.getContentPane().add(notificationPanel);
 
@@ -69,10 +66,21 @@ public class ListaView implements Observer{
 		frame.setVisible(true);
 	}
 
-	@Override
+		@Override
 	public void update(Observable observable, Object o) {
+		if(observable instanceof Adapter) {
+			if (o instanceof String) {
+				changesLabelPanel.getChangesLabel().setText((String) o);
+				changesLabelPanel.getChangesLabel().setVisible(true);
+			} else if (o instanceof ArrayList<?>) {
+				List<String> result = (List<String>) o;
+				changesLabelPanel.getChangesLabel().setText("Se detectaron cambios de aula:\n" + result.getFirst());
+				changesLabelPanel.getChangesLabel().setVisible(true);
+			}
+		}
 
 	}
+
 
 	public JLabel getChangesLabel() {
 		return changesLabelPanel.getChangesLabel();

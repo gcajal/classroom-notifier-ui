@@ -27,7 +27,7 @@ dependencies {
 
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api(libs.commons.math3)
-    implementation("com.github.gcajal:ClassRoom-Notifier:5c2599a24c")
+    implementation("com.github.gcajal:ClassRoom-Notifier:95d8e2acc5")
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation(libs.guava)
 }
@@ -47,8 +47,11 @@ tasks.named<Test>("test") {
 tasks.register("run") {
     dependsOn(gradle.includedBuild("libs").task(":app:run"))
 }
+
 tasks.register<Copy>("copyDependencies") {
-    from(configurations.runtimeClasspath)
+    from(configurations.runtimeClasspath) {
+        include("**/*.jar")
+    }
     into("./build/libs")
 }
 

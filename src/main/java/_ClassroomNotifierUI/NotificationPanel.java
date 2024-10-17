@@ -2,41 +2,37 @@ package _ClassroomNotifierUI;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Objects;
+import java.util.Set;
 
 public class NotificationPanel extends JPanel {
 
-    private JRadioButton emailOption;
-    private JRadioButton telegramOption;
-    private ButtonGroup notificationGroup;
-    private JLabel iconLabelEmail;
-    private JLabel iconLabelTelegram;
+    private JComboBox<String> notificationOptions;
+    private JLabel label;
 
-    public NotificationPanel() {
+    public NotificationPanel(Set<String> lsOptions) {
         setLayout(null);
+        setBackground(new Color(211, 211, 211));
 
-        emailOption = new JRadioButton("Email");
-        emailOption.setBounds(50, 20, 100, 30);
-        add(emailOption);
+        label = new JLabel("Tipo de Notificación:");
+        label.setBounds(10, 10, 150, 20);
+        label.setForeground(Color.DARK_GRAY);
+        add(label);
 
-        telegramOption = new JRadioButton("Telegram");
-        telegramOption.setBounds(50, 60, 100, 30);
-        add(telegramOption);
+        String[] options = new String[lsOptions.size()];
+        options = lsOptions.toArray(options); //{"Email", "Telegram"};
 
-        notificationGroup = new ButtonGroup();
-        notificationGroup.add(emailOption);
-        notificationGroup.add(telegramOption);
+        notificationOptions = new JComboBox<>(options);
+        notificationOptions.setBounds(10, 40, 230, 30);
+        add(notificationOptions);
 
-        ImageIcon emailIcon = new ImageIcon(Objects.requireNonNull(getClass().getResource("/Email_logo.png")));
-        Image imgEmail = emailIcon.getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH);
-        iconLabelEmail = new JLabel(new ImageIcon(imgEmail));
-        iconLabelEmail.setBounds(120, 25, 20, 20);
-        add(iconLabelEmail);
+        setBackground(new Color(211, 211, 211));
+    }
 
-        ImageIcon telegramIcon = new ImageIcon(Objects.requireNonNull(getClass().getResource("/Telegram_logo.png")));
-        Image imgTelegram = telegramIcon.getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH);
-        iconLabelTelegram = new JLabel(new ImageIcon(imgTelegram));
-        iconLabelTelegram.setBounds(140, 65, 20, 20);
-        add(iconLabelTelegram);
+    public String getSelectedOption() {
+        return (String) notificationOptions.getSelectedItem();
+    }
+
+    public void addNotificationOption(String newOption) {
+        notificationOptions.addItem(newOption);
     }
 }
