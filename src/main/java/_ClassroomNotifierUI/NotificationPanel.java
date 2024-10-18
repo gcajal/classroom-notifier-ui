@@ -31,8 +31,4 @@ public class NotificationPanel extends JPanel {
     public String getSelectedOption() {
         return (String) notificationOptions.getSelectedItem();
     }
-
-    public void addNotificationOption(String newOption) {
-        notificationOptions.addItem(newOption);
-    }
 }

@@ -28,6 +28,7 @@ dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api(libs.commons.math3)
     implementation("com.github.gcajal:ClassRoom-Notifier:95d8e2acc5")
+    implementation("com.github.FabiMamani:classroom-extensiones:0e26577613")
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation(libs.guava)
 }
@@ -51,6 +52,7 @@ tasks.register("run") {
 tasks.register<Copy>("copyDependencies") {
     from(configurations.runtimeClasspath) {
         include("**/Class*.jar")
+        include("**/class*.jar")
     }
     into("./build/libs")
 }

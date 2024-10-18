@@ -26,7 +26,7 @@ public class ListaView implements classroom.notifier.implement.Observer {
 	 */
 	public ListaView(ClassroomNotifier classroomNotifier) {
 		this.classroomNotifier = classroomNotifier;
-		//this.classroomNotifier.addObserver(this);
+		this.classroomNotifier.getAdapter().addObserver(this);
 		initialize();
 	}
 
@@ -54,14 +54,6 @@ public class ListaView implements classroom.notifier.implement.Observer {
 		notificationPanel.setBounds(50, 430, 250, 80);
 		notificationPanel.setBackground(new Color(211, 211, 211));
 		frame.getContentPane().add(notificationPanel);
-
-		inputPanel = new InputPanel();
-		inputPanel.setBounds(320, 430, 250, 60);
-		frame.getContentPane().add(inputPanel);
-
-		botonPanel = new BotonPanel();
-		botonPanel.setBounds(385, 495, 130, 50);
-		frame.getContentPane().add(botonPanel);
 
 		frame.setVisible(true);
 	}

@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="617665f9-76d1-444a-9a3a-1f46c4ea384b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/BotonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/BotonPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +77,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Salvadroid&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/gcajal/classroom-notifier-ui.git&quot;,
+    &quot;accountId&quot;: &quot;d7bf41ee-63a9-40e6-8e04-3b2009324c30&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -89,6 +102,7 @@
   "keyToString": {
     "Application.ApplicationInitializer.executor": "Run",
     "Gradle.Build ClassroomNotifierUI.executor": "Run",
+    "Gradle.Build classroom-notifier-ui.executor": "Run",
     "Gradle.ClassroomNotifierUI [:_ClassroomNotifierUI.ApplicationInitializer.main()].executor": "Run",
     "Gradle.ClassroomNotifierUI [:libs:buildEnvironment].executor": "Run",
     "Gradle.ClassroomNotifierUI [:libs:dependencies].executor": "Run",
@@ -97,17 +111,23 @@
     "Gradle.ClassroomNotifierUI:lib [:lib:_ClassroomNotifierUI.ApplicationInitializer.main()].executor": "Run",
     "Gradle.Download Sources.executor": "Run",
     "Gradle.Load Gradle Dependencies.executor": "Run",
+    "Gradle.classroom-notifier-ui [:_ClassroomNotifierUI.ApplicationInitializer.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "InicializacionCore",
-    "kotlin-language-version-configured": "true"
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/salva/IdeaProjects/classroom-notifier-ui",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.ClassroomNotifierUI [:libs:dependencies]">
+  <component name="RunManager" selected="Application.ApplicationInitializer">
     <configuration name="ApplicationInitializer" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="BUNDLED" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="_ClassroomNotifierUI.ApplicationInitializer" />
       <module name="ClassroomNotifierUI.main" />
+      <option name="PROGRAM_PARAMETERS" value="StockNotificar.json stockActual.json" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="_ClassroomNotifierUI.*" />
@@ -145,7 +165,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -261,11 +281,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gcajal/ClassRoom-Notifier/main-SNAPSHOT/390c6b6442c3ec060971d83468333c8199fcbf03/ClassRoom-Notifier-main-SNAPSHOT.jar!/classroom/notifier/Comparador.class</url>
           <line>27</line>
           <option name="timeStamp" value="5" />
@@ -302,11 +317,6 @@
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gcajal/ClassRoom-Notifier/68aedb8ad1/1e0388e1d00d1c9312928cb75f9bd71cfe97e2e/ClassRoom-Notifier-68aedb8ad1-sources.jar!/classroom/notifier/MateriasActuales.java</url>
           <line>52</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -12,4 +12,3 @@ plugins {
 }
 
 rootProject.name = "ClassroomNotifierUI"
-includeBuild("lib/build")
