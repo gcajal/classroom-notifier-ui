@@ -18,6 +18,7 @@ public class ListaView implements classroom.notifier.implement.Observer {
 	private ClassroomNotifier classroomNotifier;
 	private ChangesLabelPanel changesLabelPanel;
 	private NotificationPanel notificationPanel;
+	private ListaController listaController;
 	private TitlePanel titlePanel;
 	private InputPanel inputPanel;
 	private BotonPanel botonPanel;
@@ -27,6 +28,7 @@ public class ListaView implements classroom.notifier.implement.Observer {
 	public ListaView(ClassroomNotifier classroomNotifier) {
 		this.classroomNotifier = classroomNotifier;
 		this.classroomNotifier.getAdapter().addObserver(this);
+		this.listaController = new ListaController(classroomNotifier);
 		initialize();
 	}
 
@@ -50,7 +52,7 @@ public class ListaView implements classroom.notifier.implement.Observer {
 		changesLabelPanel.setBackground(new Color(211, 211, 211));
 		frame.getContentPane().add(changesLabelPanel);
 
-		notificationPanel = new NotificationPanel(this.classroomNotifier.getNotificador().getNotificadores());
+		notificationPanel = new NotificationPanel(this.classroomNotifier.getNotificador().getNotificadores(),this.listaController);
 		notificationPanel.setBounds(50, 430, 250, 80);
 		notificationPanel.setBackground(new Color(211, 211, 211));
 		frame.getContentPane().add(notificationPanel);

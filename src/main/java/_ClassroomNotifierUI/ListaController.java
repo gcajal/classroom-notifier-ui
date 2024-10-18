@@ -12,13 +12,13 @@ import java.util.List;
 
 public class ListaController implements Observer {
 
-    private final JLabel changesLabel;
+    //private final JLabel changesLabel;
     private final ClassroomNotifier classroomNotifier;
 
-    public ListaController(JLabel changesLabel, ClassroomNotifier classroomNotifier) {
-        this.changesLabel = changesLabel;
+    public ListaController(ClassroomNotifier classroomNotifier) {
+        //this.changesLabel = changesLabel;
         this.classroomNotifier = classroomNotifier;
-        this.classroomNotifier.getAdapter().addObserver(this);
+        //this.classroomNotifier.getAdapter().addObserver(this);
         //this.classroomNotifier.getActualizadorMaterias().addObserver(this);
     }
 
@@ -40,12 +40,15 @@ public class ListaController implements Observer {
         if(observable instanceof Adapter) {
             if (o instanceof ArrayList<?>) {
                 List<String> result = (List<String>) o;
-                changesLabel.setText("Se detectaron cambios de aula:\n" + result.getFirst());
-                changesLabel.setVisible(true);
+
             }
         }
 
         //Map<String, String> cambios = (Map<String, String>) o;
 
+    }
+
+    public void actualizarNotificador(String seleccion) {
+        boolean resultado = this.classroomNotifier.getNotificador().setNotificador(seleccion);
     }
 }
