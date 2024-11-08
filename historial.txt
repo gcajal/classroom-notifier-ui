@@ -1,0 +1,5 @@
+Aula: 2025 , materia: 001 Matemáticas
+Aula: 1025 , materia: 001 Matemáticas
+Aula: 5025 , materia: 001 Matemáticas
+Aula: 1025 , materia: 001 Matemáticas
+Aula: 7015 , materia: 001 Matemáticas

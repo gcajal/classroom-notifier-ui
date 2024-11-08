@@ -7,12 +7,7 @@
     <list default="true" id="617665f9-76d1-444a-9a3a-1f46c4ea384b" name="Changes" comment="Combo Notificador">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/BotonPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ChangesLabelPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/InputPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/NotificationPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ApplicationInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockActual.json" beforeDir="false" afterPath="$PROJECT_DIR$/stockActual.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,30 +43,6 @@
                 <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build setup" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="documentation" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
