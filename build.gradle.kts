@@ -31,9 +31,9 @@ dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api(libs.commons.math3)
     //implementation("com.github.gcajal:ClassRoom-Notifier:d00e720e6e")
-    implementation("com.github.gcajal:ClassRoom-Notifier:main-SNAPSHOT")
+    implementation("com.github.gcajal:ClassRoom-Notifier:a80db8b86d")
 
-    implementation("com.github.FabiMamani:classroom-extensiones:6db3c1e2fc")
+    implementation("com.github.FabiMamani:Telegram:-SNAPSHOT")
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation(libs.guava)
 }

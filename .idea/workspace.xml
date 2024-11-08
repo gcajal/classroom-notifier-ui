@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="617665f9-76d1-444a-9a3a-1f46c4ea384b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/alumnosMateria.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="617665f9-76d1-444a-9a3a-1f46c4ea384b" name="Changes" comment="Combo Notificador">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/BotonPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ChangesLabelPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/InputPanel.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/NotificationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/NotificationPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/NotificationPanel.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/stockActual.json" beforeDir="false" afterPath="$PROJECT_DIR$/stockActual.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +33,57 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ClassroomNotifierUI" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -48,12 +99,12 @@
     &quot;assignee&quot;: &quot;Salvadroid&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/gcajal/classroom-notifier-ui.git",
-    "accountId": "e2780046-ce6b-419b-b453-14c2fb3eea71"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/gcajal/classroom-notifier-ui.git&quot;,
+    &quot;accountId&quot;: &quot;e2780046-ce6b-419b-b453-14c2fb3eea71&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -68,13 +119,14 @@
     "Application.ApplicationInitializer.executor": "Run",
     "Gradle.Build ClassroomNotifierUI.executor": "Run",
     "Gradle.Build classroom-notifier-ui.executor": "Run",
-    "Gradle.ClassroomNotifierUI [:_ClassroomNotifierUI.ApplicationInitializer.main()].executor": "Debug",
+    "Gradle.ClassroomNotifierUI [:_ClassroomNotifierUI.ApplicationInitializer.main()].executor": "Run",
     "Gradle.ClassroomNotifierUI [:libs:buildEnvironment].executor": "Run",
     "Gradle.ClassroomNotifierUI [:libs:dependencies].executor": "Run",
     "Gradle.ClassroomNotifierUI [:libs:init].executor": "Run",
     "Gradle.ClassroomNotifierUI [:libs:javaToolchains].executor": "Run",
     "Gradle.ClassroomNotifierUI [buildDependents].executor": "Run",
     "Gradle.ClassroomNotifierUI [build].executor": "Run",
+    "Gradle.ClassroomNotifierUI [clean].executor": "Run",
     "Gradle.ClassroomNotifierUI:lib [:lib:_ClassroomNotifierUI.ApplicationInitializer.main()].executor": "Run",
     "Gradle.Download Sources.executor": "Run",
     "Gradle.Load Gradle Dependencies.executor": "Run",
@@ -85,7 +137,8 @@
     "last_opened_file_path": "C:/Users/gabri/eclipse-workspace/ClassroomNotifierUI",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -108,28 +161,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="ClassroomNotifierUI [:libs:buildEnvironment]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":libs:buildEnvironment" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="ClassroomNotifierUI [:libs:dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -219,6 +250,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="ClassroomNotifierUI [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ClassroomNotifierUI.test" />
       <method v="2">
@@ -234,19 +287,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ApplicationInitializer" />
+      <item itemvalue="Gradle.ClassroomNotifierUI [clean]" />
       <item itemvalue="Gradle.ClassroomNotifierUI [buildDependents]" />
       <item itemvalue="Gradle.ClassroomNotifierUI [build]" />
-      <item itemvalue="Gradle.ClassroomNotifierUI [:libs:buildEnvironment]" />
       <item itemvalue="Gradle.ClassroomNotifierUI [:libs:dependencies]" />
       <item itemvalue="Gradle.ClassroomNotifierUI [:libs:javaToolchains]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ClassroomNotifierUI [buildDependents]" />
         <item itemvalue="Gradle.ClassroomNotifierUI [build]" />
+        <item itemvalue="Gradle.ClassroomNotifierUI [clean]" />
+        <item itemvalue="Gradle.ClassroomNotifierUI [buildDependents]" />
         <item itemvalue="Gradle.ClassroomNotifierUI [:libs:dependencies]" />
         <item itemvalue="Gradle.ClassroomNotifierUI [:libs:javaToolchains]" />
-        <item itemvalue="Gradle.ClassroomNotifierUI [:libs:buildEnvironment]" />
       </list>
     </recent_temporary>
   </component>
@@ -259,6 +312,15 @@
       <option name="presentableId" value="Default" />
       <updated>1726751564586</updated>
     </task>
+    <task id="LOCAL-00001" summary="Combo Notificador">
+      <option name="closed" value="true" />
+      <created>1729219390361</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729219390361</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,6 +345,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Combo Notificador" />
+    <option name="LAST_COMMIT_MESSAGE" value="Combo Notificador" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -324,11 +390,6 @@
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gcajal/ClassRoom-Notifier/68aedb8ad1/1e0388e1d00d1c9312928cb75f9bd71cfe97e2e/ClassRoom-Notifier-68aedb8ad1-sources.jar!/classroom/notifier/MateriasActuales.java</url>
           <line>52</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gcajal/ClassRoom-Notifier/af076b0b24/856c4ac2254c46aad136a1037e73d5c1f71262e6/ClassRoom-Notifier-af076b0b24.jar!/classroom/notifier/Notificador.class</url>

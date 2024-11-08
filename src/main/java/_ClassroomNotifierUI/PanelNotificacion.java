@@ -6,13 +6,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Set;
 
-public class NotificationPanel extends JPanel {
+public class PanelNotificacion extends JPanel {
 
     private JComboBox<String> notificationOptions;
     private JLabel label;
     private ListaController controller;
 
-    public NotificationPanel(Set<String> lsOptions, ListaController controller) {
+    public PanelNotificacion(Set<String> lsOptions, ListaController controller) {
         setLayout(null);
         setBackground(new Color(211, 211, 211));
         this.controller = controller;
