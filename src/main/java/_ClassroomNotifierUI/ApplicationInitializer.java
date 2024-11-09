@@ -13,8 +13,8 @@ public class ApplicationInitializer {
         System.out.println(new Date().toString());
         //String[] argsClass = new String[1];
 
-        ClassroomNotifier classroom = ClassroomNotifier.getInstance(args);
-        //ClassroomNotifier classroom = new ClassroomNotifier(args);
+        //ClassroomNotifier classroom = ClassroomNotifier.getInstance(args);
+        ClassroomNotifier classroom = new ClassroomNotifier(args);
 
         //FactoryRegistrador factoryRegistrador = new FactoryRegistrador();
         //factoryRegistrador.cargarRegistrador(classroom,args);
