@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="617665f9-76d1-444a-9a3a-1f46c4ea384b" name="Changes" comment="Combo Notificador">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ApplicationInitializer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +97,7 @@
     "Gradle.ClassroomNotifierUI [buildDependents].executor": "Run",
     "Gradle.ClassroomNotifierUI [build].executor": "Run",
     "Gradle.ClassroomNotifierUI [clean].executor": "Run",
+    "Gradle.ClassroomNotifierUI [run].executor": "Run",
     "Gradle.ClassroomNotifierUI.executor": "Run",
     "Gradle.ClassroomNotifierUI:lib [:lib:_ClassroomNotifierUI.ApplicationInitializer.main()].executor": "Run",
     "Gradle.Download Sources.executor": "Run",
@@ -129,9 +121,10 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle --dry-run" />
+      <command value="gradle run" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ClassroomNotifierUI [build]">
+  <component name="RunManager" selected="Gradle.ClassroomNotifierUI [clean]">
     <configuration name="ApplicationInitializer" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="BUNDLED" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -146,28 +139,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="ClassroomNotifierUI [:libs:dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":libs:dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="ClassroomNotifierUI [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -235,6 +206,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="ClassroomNotifierUI [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="ClassroomNotifierUI" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -270,19 +263,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ApplicationInitializer" />
+      <item itemvalue="Gradle.ClassroomNotifierUI [run]" />
       <item itemvalue="Gradle.ClassroomNotifierUI" />
       <item itemvalue="Gradle.ClassroomNotifierUI [clean]" />
       <item itemvalue="Gradle.ClassroomNotifierUI [buildDependents]" />
       <item itemvalue="Gradle.ClassroomNotifierUI [build]" />
-      <item itemvalue="Gradle.ClassroomNotifierUI [:libs:dependencies]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ClassroomNotifierUI [clean]" />
+        <item itemvalue="Gradle.ClassroomNotifierUI [run]" />
         <item itemvalue="Gradle.ClassroomNotifierUI [build]" />
         <item itemvalue="Gradle.ClassroomNotifierUI [buildDependents]" />
-        <item itemvalue="Gradle.ClassroomNotifierUI [clean]" />
         <item itemvalue="Gradle.ClassroomNotifierUI" />
-        <item itemvalue="Gradle.ClassroomNotifierUI [:libs:dependencies]" />
       </list>
     </recent_temporary>
   </component>

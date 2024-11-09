@@ -16,8 +16,8 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
 
     //implementation "org.json:json:20141113"
-    implementation 'com.github.Francuster:Historial-Aulas:main-SNAPSHOT'
-    implementation 'com.github.gcajal:classroom-notifier:main-SNAPSHOT'
+    //implementation 'com.github.Francuster:Historial-Aulas:main-SNAPSHOT'
+    implementation 'com.github.gcajal:classroom-notifier:d78252f25a'
     //implementation 'com.github.FabiMamani:Telegram:main-SNAPSHOT'
 
 }
