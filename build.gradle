@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'org.classroom'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    //implementation "org.json:json:20141113"
+    implementation 'com.github.Francuster:Historial-Aulas:main-SNAPSHOT'
+    implementation 'com.github.gcajal:classroom-notifier:main-SNAPSHOT'
+    //implementation 'com.github.FabiMamani:Telegram:main-SNAPSHOT'
+
+}
+
+application {
+    mainClass = '_ClassroomNotifierUI.ApplicationInitializer' // Reemplaza con tu clase principal
+}
+
+test {
+    useJUnitPlatform()
+}
+
+//tasks.register<Copy>("copyDependencies") {
+ //   from(configurations.runtimeClasspath) {
+ //       include("**/Class*.jar")
+ //       include("**/class*.jar")
+ //       include("**/Telegram*.jar")
+ //   }
+ //   into("./build/libs")
+//}
+
+//tasks.named("build") {
+//    dependsOn("copyDependencies")
+//}
+/*
+tasks.buildDependents. (type: Copy) {
+    from configurations.runtime
+            into "lib"
+}
+*/

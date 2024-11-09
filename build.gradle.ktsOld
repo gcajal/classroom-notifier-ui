@@ -24,18 +24,18 @@ configurations.all {
 dependencies {
     // Use JUnit Jupiter for testing.
 
-    testImplementation(libs.junit.jupiter)
+    //testImplementation(libs.junit.jupiter)
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
     // This dependency is exported to consumers, that is to say found on their compile classpath.
-    api(libs.commons.math3)
+    //api(libs.commons.math3)
     //implementation("com.github.gcajal:ClassRoom-Notifier:d00e720e6e")
     implementation("com.github.Francuster:Historial-Aulas:main-SNAPSHOT")
     implementation("com.github.gcajal:ClassRoom-Notifier:main-SNAPSHOT")
     implementation("com.github.FabiMamani:Telegram:main-SNAPSHOT")
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
-    implementation(libs.guava)
+    //implementation(libs.guava)
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -50,9 +50,11 @@ tasks.named<Test>("test") {
     useJUnitPlatform()
 }
 
+/*
 tasks.register("run") {
     dependsOn(gradle.includedBuild("libs").task(":app:run"))
 }
+*/
 
 tasks.register<Copy>("copyDependencies") {
     from(configurations.runtimeClasspath) {
