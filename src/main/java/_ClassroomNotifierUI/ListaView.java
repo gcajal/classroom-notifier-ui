@@ -7,7 +7,7 @@ import javax.swing.JFrame;
 
 import classroom.notifier.entity.Observable;
 
-public class ListaView implements classroom.notifier.implement.Observer<String> {
+public class ListaView implements classroom.notifier.implement.Observer{
 
 	private ClassroomNotifier classroomNotifier;
 	private PanelAvisoMateria panelAviso;
@@ -20,7 +20,8 @@ public class ListaView implements classroom.notifier.implement.Observer<String> 
 	 */
 	public ListaView(ClassroomNotifier classroomNotifier) {
 		this.classroomNotifier = classroomNotifier;
-		this.classroomNotifier.getNotificador().addObserver(this);
+		//this.classroomNotifier.getNotificador().addObserver(this);
+		this.classroomNotifier.getCurrentObservers().add(this);
 		this.listaController = new ListaController(classroomNotifier);
 		inicilizar();
 	}
@@ -45,7 +46,8 @@ public class ListaView implements classroom.notifier.implement.Observer<String> 
 		panelAviso.setBackground(new Color(211, 211, 211));
 		frame.getContentPane().add(panelAviso);
 
-		panelNotificacion = new PanelNotificacion(this.classroomNotifier.getNotificador().getNotificadores(),this.listaController);
+		//panelNotificacion = new PanelNotificacion(this.classroomNotifier.getNotificador().getNotificadores(),this.listaController);
+		panelNotificacion = new PanelNotificacion(this.classroomNotifier.getAllObserversNames(),this.listaController);
 		panelNotificacion.setBounds(50, 430, 250, 80);
 		panelNotificacion.setBackground(new Color(211, 211, 211));
 		frame.getContentPane().add(panelNotificacion);
@@ -55,8 +57,8 @@ public class ListaView implements classroom.notifier.implement.Observer<String> 
 
 
 	@Override
-	public void update(Observable<String> observable, String s) {
-		panelAviso.getPanel().setText(s);
+	public void update(Object s) {
+		panelAviso.getPanel().setText((String) s);
 		panelAviso.getPanel().setVisible(true);
 	}
 }

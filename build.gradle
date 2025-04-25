@@ -17,9 +17,12 @@ dependencies {
 
     //implementation "org.json:json:20141113"
     //implementation 'com.github.Francuster:Historial-Aulas:main-SNAPSHOT'
-    implementation 'com.github.gcajal:classroom-notifier:7ab616ab99'
-    //implementation 'com.github.FabiMamani:Telegram:main-SNAPSHOT'
-
+    //implementation 'com.github.gcajal:classroom-notifier:7ab616ab99'
+    //implementation 'com.github.gcajal:ClassRoom-Notifier:us-3-SNAPSHOT'
+    implementation 'com.github.gcajal:ClassRoom-Notifier:4b04647e13'
+    implementation 'com.github.FabiMamani:Telegram:main-SNAPSHOT'
+    implementation 'com.github.FabiMamani:Mail:main-SNAPSHOT'
+    implementation "org.json:json:20141113"
 }
 
 application {
@@ -28,6 +31,11 @@ application {
 
 test {
     useJUnitPlatform()
+}
+
+task copyJars(type: Copy) {
+    from configurations.runtimeClasspath
+    into "$buildDir/libs"
 }
 
 //tasks.register<Copy>("copyDependencies") {

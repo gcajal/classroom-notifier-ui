@@ -17,7 +17,7 @@ public class PanelNotificacion extends JPanel {
         setBackground(new Color(211, 211, 211));
         this.controller = controller;
 
-        label = new JLabel("Tipo de Notificación:");
+        label = new JLabel("Notificadores:");
         label.setBounds(10, 10, 150, 20);
         label.setForeground(Color.DARK_GRAY);
         add(label);
@@ -44,6 +44,7 @@ public class PanelNotificacion extends JPanel {
                 String seleccion = (String) comboBox.getSelectedItem();
                 controller.actualizarNotificador(seleccion);
                 System.out.println("Elemento seleccionado: " + seleccion);
+
             }
         };
     }

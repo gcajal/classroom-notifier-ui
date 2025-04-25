@@ -1,6 +1,6 @@
 package _ClassroomNotifierUI;
 
-import classroom.notifier.Adapter;
+//import classroom.notifier.Adapter;
 import classroom.notifier.ClassroomNotifier;
 import classroom.notifier.entity.Observable;
 import classroom.notifier.implement.Observer;
@@ -21,6 +21,7 @@ public class ListaController{
 
 
     public void actualizarNotificador(String seleccion) {
-        boolean resultado = this.classroomNotifier.getNotificador().setNotificador(seleccion);
+        //boolean resultado = this.classroomNotifier.getNotificador().setNotificador(seleccion);
+         this.classroomNotifier.addCurrentObservers(seleccion);
     }
 }
