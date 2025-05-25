@@ -1,6 +1,6 @@
 {
   "materias":[
-    {"nombre":"001 Matemáticas" ,"aula":"7010"}
-  ,{"nombre":"002 PP2" ,"aula":"7012"  }
+    {"nombre":"001 Matemáticas" ,"aula":"7012"}
+  ,{"nombre":"002 PP2" ,"aula":"7010"  }
   ]
 }

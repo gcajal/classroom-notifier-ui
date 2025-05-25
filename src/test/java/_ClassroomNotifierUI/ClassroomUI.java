@@ -11,8 +11,10 @@ public class ClassroomUI {
     public static void main(String[] args) throws FileNotFoundException {
         DataFromFile data = new DataFromFile("stockActual.json");
         FactoryClassroom factory = new FactoryClassroom();
+
         ClassroomNotifier cl = factory.Inicializar(data, "build/libs");
-        new ListaView(cl);
+        ListaView listaView = new ListaView(cl);
+        listaView.init();
     }
 
 }

@@ -2,12 +2,12 @@ package _ClassroomNotifierUI;
 
 import classroom.notifier.ClassroomNotifier;
 
-import java.awt.Color;
+import java.awt.*;
 import javax.swing.JFrame;
 
-import classroom.notifier.entity.Observable;
+import classroom.notifier.implement.Observer;
 
-public class ListaView implements classroom.notifier.implement.Observer{
+public class ListaView implements Observer {
 
 	private ClassroomNotifier classroomNotifier;
 	private PanelAvisoMateria panelAviso;
@@ -20,17 +20,18 @@ public class ListaView implements classroom.notifier.implement.Observer{
 	 */
 	public ListaView(ClassroomNotifier classroomNotifier) {
 		this.classroomNotifier = classroomNotifier;
-		//this.classroomNotifier.getNotificador().addObserver(this);
-		this.classroomNotifier.getCurrentObservers().add(this);
 		this.listaController = new ListaController(classroomNotifier);
-		inicilizar();
+		//init();
 	}
 
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	private void inicilizar() {
-        JFrame frame = new JFrame();
+	public void init() {
+
+		this.suscribirseClassroom();
+
+		JFrame frame = new JFrame();
 		frame.setBounds(0, 0, 600, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
@@ -44,6 +45,7 @@ public class ListaView implements classroom.notifier.implement.Observer{
 		panelAviso = new PanelAvisoMateria();
 		panelAviso.setBounds(50, 80, 500, 300);
 		panelAviso.setBackground(new Color(211, 211, 211));
+		panelAviso.setFont(new Font("Arial", Font.PLAIN, 16));
 		frame.getContentPane().add(panelAviso);
 
 		//panelNotificacion = new PanelNotificacion(this.classroomNotifier.getNotificador().getNotificadores(),this.listaController);
@@ -53,6 +55,11 @@ public class ListaView implements classroom.notifier.implement.Observer{
 		frame.getContentPane().add(panelNotificacion);
 
 		frame.setVisible(true);
+	}
+
+	private void suscribirseClassroom() {
+		this.classroomNotifier.addObserver(this);
+		this.classroomNotifier.addCurrentObservers(this.getClass().getSimpleName());
 	}
 
 

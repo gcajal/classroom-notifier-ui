@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="617665f9-76d1-444a-9a3a-1f46c4ea384b" name="Changes" comment="Combo Notificador">
-      <change afterPath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/ClassroomUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/DataFromFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/Timer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="617665f9-76d1-444a-9a3a-1f46c4ea384b" name="Changes" comment="refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ApplicationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ApplicationInitializer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/PanelNotificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/PanelNotificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/LibraryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/ClassroomUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/ClassroomUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockActual.json" beforeDir="false" afterPath="$PROJECT_DIR$/stockActual.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,6 +136,7 @@
       <command value="gradle --dry-run" />
       <command value="gradle run" />
       <command value="gradle build" />
+      <command value="gradle dependencies" />
     </option>
   </component>
   <component name="RunManager" selected="Application.ClassroomUI">
@@ -283,8 +277,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.classroom-notifier-ui [copyJars]" />
-        <item itemvalue="Gradle.classroom-notifier-ui [dependencies]" />
         <item itemvalue="Gradle.ClassroomNotifierUI [clean]" />
+        <item itemvalue="Gradle.classroom-notifier-ui [dependencies]" />
         <item itemvalue="Gradle.classroom-notifier-ui [build]" />
         <item itemvalue="Application.ClassroomUI" />
       </list>
@@ -307,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1729219390361</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor">
+      <created>1745611620121</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745611620121</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,7 +336,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Combo Notificador" />
-    <option name="LAST_COMMIT_MESSAGE" value="Combo Notificador" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

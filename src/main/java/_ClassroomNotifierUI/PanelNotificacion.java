@@ -32,10 +32,6 @@ public class PanelNotificacion extends JPanel {
         setBackground(new Color(211, 211, 211));
     }
 
-    public String getSelectedOption() {
-        return (String) notificationOptions.getSelectedItem();
-    }
-
     private ActionListener changeValue(JComboBox comboBox){
         return new ActionListener() {
             @Override
