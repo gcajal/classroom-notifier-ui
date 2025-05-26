@@ -24,4 +24,9 @@ public class ListaController{
         //boolean resultado = this.classroomNotifier.getNotificador().setNotificador(seleccion);
          this.classroomNotifier.addCurrentObservers(seleccion);
     }
+
+    public void eliminarNotificador(String seleccion){
+        //this.classroomNotifier.refreshObservers(seleccion);
+        this.classroomNotifier.deleteCurrentObserver(seleccion);
+    }
 }

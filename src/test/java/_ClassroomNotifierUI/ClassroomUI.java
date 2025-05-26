@@ -2,19 +2,25 @@ package _ClassroomNotifierUI;
 
 import classroom.notifier.ClassroomNotifier;
 import classroom.notifier.FactoryClassroom;
+import org.classroomNotifier.init.LoggerFactory;
+import org.classroomNotifier.logger.Logger;
 
 import java.io.FileNotFoundException;
-import java.util.Date;
 
 public class ClassroomUI {
 
     public static void main(String[] args) throws FileNotFoundException {
+
+        LoggerFactory loggerFactory = LoggerFactory.getInstance("log.txt");
+        Logger logger = loggerFactory.createLogger();
+
         DataFromFile data = new DataFromFile("stockActual.json");
         FactoryClassroom factory = new FactoryClassroom();
 
         ClassroomNotifier cl = factory.Inicializar(data, "build/libs");
+        cl.addObserver(logger);
+        cl.addCurrentObservers(logger.getClass().getSimpleName());
         ListaView listaView = new ListaView(cl);
         listaView.init();
     }
-
 }

@@ -12,6 +12,8 @@ public class PanelNotificacion extends JPanel {
     private JLabel label;
     private ListaController controller;
 
+    private String previousSelection = "ListaView";
+
     public PanelNotificacion(Set<String> lsOptions, ListaController controller) {
         setLayout(null);
         setBackground(new Color(211, 211, 211));
@@ -22,8 +24,9 @@ public class PanelNotificacion extends JPanel {
         label.setForeground(Color.DARK_GRAY);
         add(label);
 
-        String[] options = new String[lsOptions.size()];
-        options = lsOptions.toArray(options); //{"Email", "Telegram"};
+        String[] options = lsOptions.stream()
+                .filter(option -> !"logger".equalsIgnoreCase(option))
+                .toArray(String[]::new);
 
         notificationOptions = new JComboBox<>(options);
         notificationOptions.setBounds(10, 40, 230, 30);
@@ -37,7 +40,12 @@ public class PanelNotificacion extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                if (previousSelection != null){
+                    controller.eliminarNotificador(previousSelection);
+                }
+
                 String seleccion = (String) comboBox.getSelectedItem();
+                previousSelection = seleccion;
                 controller.actualizarNotificador(seleccion);
                 System.out.println("Elemento seleccionado: " + seleccion);
 
