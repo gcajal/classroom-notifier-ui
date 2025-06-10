@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="617665f9-76d1-444a-9a3a-1f46c4ea384b" name="Changes" comment="updated version">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/ClassroomNotifierUI.test.iml" afterDir="false" />
+    <list default="true" id="617665f9-76d1-444a-9a3a-1f46c4ea384b" name="Changes" comment="add logger">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/FactoryRegistrador.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/PanelNotificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/PanelNotificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Email_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Telegram_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/email_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/ClassroomUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/ClassroomUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/DataFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/DataFromFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockActual.json" beforeDir="false" afterPath="$PROJECT_DIR$/stockActual.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -280,10 +276,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.classroom-notifier-ui [dependencies]" />
-        <item itemvalue="Application.ClassroomUI" />
         <item itemvalue="Gradle.classroom-notifier-ui [copyJars]" />
+        <item itemvalue="Gradle.classroom-notifier-ui [dependencies]" />
         <item itemvalue="Gradle.ClassroomNotifierUI [clean]" />
+        <item itemvalue="Application.ClassroomUI" />
         <item itemvalue="Gradle.classroom-notifier-ui" />
       </list>
     </recent_temporary>
@@ -319,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1748209208429</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add logger">
+      <created>1748219932258</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748219932258</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -349,7 +352,8 @@
     <MESSAGE value="Combo Notificador" />
     <MESSAGE value="refactor" />
     <MESSAGE value="updated version" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated version" />
+    <MESSAGE value="add logger" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logger" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

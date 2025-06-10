@@ -1,7 +1,10 @@
 package _ClassroomNotifierUI;
 
-import classroom.notifier.implement.InformadorDatos;
-import classroom.notifier.implement.Observer;
+
+
+import classroom.notifier.aplicacion.ClassroomMateriaAula;
+import classroom.notifier.interfaces.InformadorDatos;
+import classroom.notifier.interfaces.Observer;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -23,7 +26,7 @@ public class DataFromFile implements InformadorDatos, Runnable {
         thread.start();
     }
     @Override
-    public Map<String, String> Leer() {
+    public void enviar() {
 
         Map<String, String> resultado = new HashMap<String,String>();
         try{
@@ -44,12 +47,12 @@ public class DataFromFile implements InformadorDatos, Runnable {
         }
 
         if(!resultado.isEmpty())
-            observador.forEach(o -> o.update(resultado));
-        return resultado;
+            observador.forEach(o -> o.update(new ClassroomMateriaAula(resultado)));
+
     }
 
     @Override
-    public void agregarObservador(Object o) {
+    public void suscribir(Object o) {
         observador.add((Observer) o);
     }
 
@@ -70,7 +73,7 @@ public class DataFromFile implements InformadorDatos, Runnable {
     @Override
     public void run() {
 
-        Leer();
+        enviar();
     }
 
 }

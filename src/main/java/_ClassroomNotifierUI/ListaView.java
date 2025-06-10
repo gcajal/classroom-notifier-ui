@@ -1,11 +1,13 @@
 package _ClassroomNotifierUI;
 
-import classroom.notifier.ClassroomNotifier;
+
 
 import java.awt.*;
 import javax.swing.JFrame;
 
-import classroom.notifier.implement.Observer;
+import classroom.notifier.aplicacion.ClassroomNotifier;
+import classroom.notifier.interfaces.Observer;
+
 
 public class ListaView implements Observer {
 
