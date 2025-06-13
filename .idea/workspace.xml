@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="617665f9-76d1-444a-9a3a-1f46c4ea384b" name="Changes" comment="add logger">
+    <list default="true" id="617665f9-76d1-444a-9a3a-1f46c4ea384b" name="Changes" comment="Adaptacion sin logger">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/FactoryRegistrador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ClassroomNotifierUI/ListaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/ClassroomUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/ClassroomUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/DataFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_ClassroomNotifierUI/DataFromFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockActual.json" beforeDir="false" afterPath="$PROJECT_DIR$/stockActual.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +112,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/GUSTAVO/IdeaProjects/classroom-notifier-ui/build/libs&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/GUSTAVO/IdeaProjects/Whastapp&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -322,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1748219932258</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adaptacion sin logger">
+      <created>1749585435350</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749585435350</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -353,7 +355,8 @@
     <MESSAGE value="refactor" />
     <MESSAGE value="updated version" />
     <MESSAGE value="add logger" />
-    <option name="LAST_COMMIT_MESSAGE" value="add logger" />
+    <MESSAGE value="Adaptacion sin logger" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaptacion sin logger" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
